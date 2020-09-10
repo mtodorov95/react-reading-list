@@ -3,9 +3,12 @@ import { BookContext } from "../contexts/BookContext";
 import "./BookDetails.css";
 
 function BookDetails({ book }) {
-  const { removeBook } = useContext(BookContext);
+  const { dispatch } = useContext(BookContext);
   return (
-    <li className="bookDetails" onClick={() => removeBook(book.id)}>
+    <li
+      className="bookDetails"
+      onClick={() => dispatch({ type: "REMOVE_BOOK", id: book.id })}
+    >
       <div className="bookDetails__title">{book.title}</div>
       <div className="bookDetails__author">{book.author}</div>
     </li>
