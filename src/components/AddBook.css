@@ -2,20 +2,31 @@
   padding: 20px;
 }
 
+.addBook__header {
+  color: #000;
+}
+
 .addBook__field {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
   margin: 6px 0;
-  background-color: #3c1f3c;
+  background-color: #bdbdbd;
+  border-radius: 4px;
   color: #fff;
   border: 0;
+  outline: none;
 }
 
 .addBook__button {
   display: block;
-  padding: 6px 20px;
+  padding: 6px 30px;
   margin: 10px auto;
-  background-color: #eee;
+  background-color: #616161;
+  color: #f5f5f5;
+  font-weight: 700;
   border: 0;
+  border-radius: 15px;
+  outline: none;
+  cursor: pointer;
 }

@@ -1,7 +1,9 @@
 .navbar {
   padding: 10px 20px;
   text-align: center;
-  background-color: #6d3d6d;
+  background-color: #f44336;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .navbar h1 {

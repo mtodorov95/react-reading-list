@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import "./AddBook.css";
 import { BookContext } from "../contexts/BookContext";
+import AddIcon from "@material-ui/icons/Add";
 
 function AddBook() {
   const { dispatch } = useContext(BookContext);
@@ -15,11 +16,12 @@ function AddBook() {
   };
   return (
     <form className="addBook" onSubmit={handleSubmit}>
+      <h4 className="addBook__header">Add a new book</h4>
       <input
         className="addBook__field"
         required
         type="text"
-        placeholder="Book title"
+        placeholder="Title"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
@@ -27,11 +29,13 @@ function AddBook() {
         className="addBook__field"
         required
         type="text"
-        placeholder="Book author"
+        placeholder="Author"
         value={author}
         onChange={(e) => setAuthor(e.target.value)}
       />
-      <input className="addBook__button" type="submit" value="Add Book" />
+      <button className="addBook__button" type="submit">
+        <AddIcon />
+      </button>
     </form>
   );
 }

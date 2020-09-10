@@ -1,14 +1,12 @@
 .bookDetails {
-  background: #6d3d6d;
+  display: flex;
+  justify-content: space-between;
+  background: #bdbdbd;
   border-radius: 4px;
   padding: 10px;
-  cursor: pointer;
   margin: 10px 0;
 }
-.bookDetails:hover {
-  opacity: 0.7;
-  text-decoration: line-through;
-}
+
 .bookDetails__title {
   font-weight: bold;
   color: #fff;
@@ -16,5 +14,21 @@
 }
 .bookDetails__author {
   font-size: 0.9em;
-  color: #ddd;
+  color: #eee;
+}
+
+.bookDetails__button {
+  padding: 10px;
+}
+
+.bookDetails__button > .MuiSvgIcon-root {
+  height: 35px;
+  width: 35px;
+  color: green;
+  opacity: 0.5;
+}
+
+.bookDetails__button > .MuiSvgIcon-root:hover {
+  cursor: pointer;
+  opacity: 1;
 }

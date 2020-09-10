@@ -7,7 +7,9 @@ function Navbar() {
   return (
     <div className="navbar">
       <h1>Reading List</h1>
-      <p>You have {books.length} books to read</p>
+      <p>
+        You have {books.length} {books.length === 1 ? "book" : "books"} to read
+      </p>
     </div>
   );
 }
