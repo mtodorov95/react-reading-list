@@ -1,0 +1,21 @@
+.addBook {
+  padding: 20px;
+}
+
+.addBook__field {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 6px 0;
+  background-color: #3c1f3c;
+  color: #fff;
+  border: 0;
+}
+
+.addBook__button {
+  display: block;
+  padding: 6px 20px;
+  margin: 10px auto;
+  background-color: #eee;
+  border: 0;
+}
